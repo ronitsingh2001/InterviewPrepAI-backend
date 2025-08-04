@@ -35,9 +35,6 @@ app.use('/api/question', questionRoutes)
 app.use('/api/ai/generate-questions', protect, generateInterviewQuestion)
 app.use('/api/ai/generate-explanation', protect, generateConceptExplanation)
 
-// Server uploads folder
-app.use("/uploads", express.static(path.join(__dirname, "uploads"), {}));
-
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
