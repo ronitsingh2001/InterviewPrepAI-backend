@@ -48,13 +48,10 @@ const generateConceptExplanation = async (req, res) => {
     }
 
     const prompt = conceptExplainPrompt(question);
-    console.log(prompt);
     
     const data = await fetchAIContent(prompt);
     return res.status(200).json(data);
   } catch (error) {
-    console.log(error);
-    
     return res.status(500).json({
       success: false,
       message: "Failed to generate questions",

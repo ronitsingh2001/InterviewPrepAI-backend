@@ -105,9 +105,7 @@ const deleteSession = async (req, res) => {
       .status(200)
       .json({ success: true, message: "Session deleted successfully" });
   } catch (error) {
-    console.log(error);
-
-    return res.status(500).json({ success: false, message: "Server error" });
+    return res.status(500).json({ success: false, message: "Server error", error: error });
   }
 };
 
