@@ -1,0 +1,58 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Coverage directory
+coverage/
+
+# Build artifacts
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Dependency directories (if you accidentally commit one)
+bower_components/
+jspm_packages/
+
+# Optional npm cache directory
+.npm/
+
+# Optional REPL history
+.node_repl_history
+
+# Debug log from npm
+npm-debug.log
+
+# Output of 'npm pack'
+*.tgz
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Swagger auto-generated docs (if applicable)
+swagger.json
+swagger.yaml
