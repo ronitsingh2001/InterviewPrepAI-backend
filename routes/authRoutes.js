@@ -2,9 +2,9 @@ const express = require("express");
 const cloudinary = require("cloudinary").v2;
 
 cloudinary.config({
-  cloud_name: "dl2ht3ice",
-  api_key: "327929833693324",
-  api_secret: "r6veXc6gg_BQ5JcxODocjUPlttU",
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_SECRET_KEY,
 });
 const {
   registerUser,
